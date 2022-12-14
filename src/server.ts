@@ -1,9 +1,8 @@
-import "reflect-metadata"; 
+import "reflect-metadata";
+import express from "express";
 
-import { Express } from "express";
+const app = express();
 
-import express = require("express");
+app.use(express.json());
 
-let app: Express = express();
-
-app.listen(3000, () => console.log("serve is running"));
+app.listen(3000, () => console.log("server is running"));
