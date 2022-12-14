@@ -1,0 +1,1 @@
+docker run -d -i -t -p5432:5432 -ePOSTGRES_PASSWORD=123456 postgres:13
